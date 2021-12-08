@@ -1,10 +1,10 @@
 # ElasticSearch Database of MAG dataset
 ## Description
 An database of the Microsoft Academic Graph dataset is constructed with ElasticSearch and the ELK Stack. 
+* All indexes correspond to an entity with the same name in the MAG dataset from Azure, except that ```author_oag``` index contains MAG author data from [OAG](https://www.microsoft.com/en-us/research/project/open-academic-graph/). Please also refer to [Microsoft Academic Graph data schema](https://docs.microsoft.com/en-us/academic-services/graph/reference-data-schema) for details of indexes.
 * ```src/query.py``` defined the class ```es_helper``` that is connected to the ElasticSearch database and supports making search query to the database or perform cross index search, e.g. search for all papers published by an author given the author's name and author's affiliation. 
 * ```src/scholar.py```compares the result of query from ElasticSearch and that from Google Scholar to verify the performance.
 * ```config``` contains configuration files used for ElaticSearch, Kibana and Logstash.
-* Please refer to [Microsoft Academic Graph data schema](https://docs.microsoft.com/en-us/academic-services/graph/reference-data-schema) for details of the database.
 ## Getting Started
 * Log in to the University's server ```Osprey1.csl.illinois.edu```.
 * Clone the repository to the server.
