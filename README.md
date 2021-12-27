@@ -6,7 +6,6 @@ This module contains functions that sends `GET` requests to the ElasticSearch da
 * Clone the repository to the server.
 * Run ```pip install -r src/requirements.txt```
 * Open Kibana dashboard in a browser using http://128.174.136.27:5601/app/home#/, and interact with the REST API of ElasticSearch in `Dev Tools`.
-
 ```
 ElasticSearch-MAG-Database
     - config/ 
@@ -26,13 +25,15 @@ ElasticSearch-MAG-Database
         -- query.py
         -- requirements.txt
         -- scholar.py
-        -- scraper.py
+        -- full_form_detector.py
         -- data/
             --- R1R2_research_college_cs_faculty.csv
 ```
 * ```config/``` contains configuration files used for ElaticSearch, Kibana and Logstash.
 * ```src/query.py``` defined the class ```es_helper``` that is connected to the ElasticSearch database and supports making search query to the database or perform cross index search, e.g. search for all papers published by an author given the author's name and author's affiliation. 
 * ```src/scholar.py```compares the result of query from ElasticSearch and that from Google Scholar to verify the performance.
-* ```src/scraper.py``` scrapes for the full form of an academic institution given its acronym in . 
+* ```src/full_form_detector.py``` scrapes for the full form of an academic institution given its acronym in Wikipedia. 
+## Usage
+* 
 ## Author
 Jiaqi Cao
