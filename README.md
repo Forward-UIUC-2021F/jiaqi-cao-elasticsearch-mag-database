@@ -1,7 +1,7 @@
 # ElasticSearch Database of the MAG dataset
 This module contains functions that sends `GET` requests to the Elasticsearch database of the Microsoft Academic Graph data built in the `Osprey1` server of the University of Illinois at Urbana-Champaign. Google Scholar is served as a benchmark system through functions that fetches search result from Google Scholar and compares that from the database. Also, this module supports search for acronyms through a scraper that scrapes for the [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)'s result for the most likely institutions the acronyms refer to.
 ## About the database
-* All indexes correspond to an entity with the same name in the MAG dataset from Azure, except that ```author_oag``` index contains MAG author data from [OAG](https://www.microsoft.com/en-us/research/project/open-academic-graph/). Please refer to [Microsoft Academic Graph data schema](https://docs.microsoft.com/en-us/academic-services/graph/reference-data-schema) for details of indexes.
+* All indexes correspond to an entity with the same name in the MAG dataset from Azure. Please refer to [Microsoft Academic Graph data schema](https://docs.microsoft.com/en-us/academic-services/graph/reference-data-schema) for details of indexes.
 * [A placeholder for index management page in the Kibana interface]
 ## Setup
 * Log in to the University's server ```Osprey1.csl.illinois.edu```.
