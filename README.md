@@ -1,8 +1,10 @@
 # ElasticSearch Database of the MAG dataset
 This module contains functions that sends `GET` requests to the Elasticsearch database of the Microsoft Academic Graph data built in the `Osprey1` server of the University of Illinois at Urbana-Champaign. Google Scholar is served as a benchmark system through functions that fetches search result from Google Scholar and compares that from the database. Also, this module supports search for acronyms through a scraper that scrapes for the [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)'s result for the most likely institutions the acronyms refer to.
 ## About the database
-* All indexes correspond to an entity with the same name in the MAG dataset from Azure. Please refer to [Microsoft Academic Graph data schema](https://docs.microsoft.com/en-us/academic-services/graph/reference-data-schema) for details of indexes.
-* [A placeholder for index management page in the Kibana interface]
+* All indexes correspond to an entity with the same name in the MAG dataset from Azure. Refer to [Microsoft Academic Graph data schema](https://docs.microsoft.com/en-us/academic-services/graph/reference-data-schema) for details of indexes.
+* The indexes' information is as follows. Go to ```Kibana Interface -> Tool Bar -> Management -> Stack management -> Data -> Index Management``` for data schemas.
+<p align="center"><img src="IMG_8259.JPG" width="40%"/><p>
+    
 ## Setup
 * Log in to the University's server ```Osprey1.csl.illinois.edu```.
 * Clone the repository to the server.
@@ -35,8 +37,6 @@ ElasticSearch-MAG-Database
 * ```src/query.py``` defined the class ```es_helper``` that is connected to the Elasticsearch database and supports making search query to the database or perform cross index search, e.g. search for all papers published by an author given the author's name and author's affiliation. 
 * ```src/scholar.py```compares the result of query from ElasticSearch and that from Google Scholar to verify the performance.
 * ```src/full_form_detector.py``` scrapes for the full form of an academic institution given its acronym in Wikipedia. 
-## Usage
-* ``````
 ## Built with
 This module uses the following open source packages:
 * [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
