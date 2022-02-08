@@ -31,11 +31,11 @@
 #
 # Path to directory where to store the data (separate multiple locations by comma):
 #
-path.data: /scratch/jiaqic7/ELK_data/data
+path.data: /srv/local/data/scratch/jiaqic7/ELK_data/data
 #
 # Path to log files:
 #
-path.logs: /scratch/jiaqic7/ELK_data/log
+path.logs: /srv/local/data/scratch/jiaqic7/ELK_data/log
 #
 # ----------------------------------- Memory -----------------------------------
 #
@@ -87,9 +87,9 @@ discovery.type: single-node
 #action.destructive_requires_name: true
 
 transport.host: localhost 
-transport.tcp.port: 9300 
-http.port: 9200
+transport.tcp.port: 9400 
+http.port: 9500
 
-# xpack.security.enabled: true
+xpack.security.enabled: true
 
 

@@ -9,7 +9,7 @@ This module contains functions that sends `GET` requests to the Elasticsearch da
 * Log in to the University's server ```Osprey1.csl.illinois.edu```.
 * Clone the repository to the server.
 * Run ```pip install -r src/requirements.txt```
-* Open Kibana dashboard in a browser using http://128.174.136.27:5601/app/home#/, and interact with the REST API of ElasticSearch in `Dev Tools`.
+* Open Kibana dashboard in a browser using http://128.174.136.27:5602/app/home#/, and interact with the REST API of ElasticSearch in `Dev Tools`.
 ```
 ElasticSearch-MAG-Database
     - config/ 
